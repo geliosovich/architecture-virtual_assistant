@@ -8,17 +8,19 @@ intents:
   - affirm
   - deny
   - request_info
+  - mood_great
+  - bot_challenge
 
 responses:
   utter_greet:
     - text: "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
-  
+
   utter_goodbye:
     - text: "До свидания! Если появятся вопросы по архитектуре ПО, обращайтесь."
-  
+
   utter_ask_more:
     - text: "Что именно вас интересует в архитектуре программного обеспечения?"
-  
+
   utter_acknowledge:
     - text: "Понял, расскажите подробнее о вашем проекте или задачах."
 
@@ -41,7 +43,7 @@ slots:
     type: text
     influence_conversation: false
     mappings:
-        - type: from_text
+      - type: from_text
 
 session_config:
   session_expiration_time: 60
