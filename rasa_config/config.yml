@@ -16,7 +16,7 @@ pipeline:
     cache_dir: null
 
   - name: DIETClassifier # Классификатор на базе DIET
-    epochs: 80 # Минимальное количество эпох обучения
+    epochs: 100 # Минимальное количество эпох обучения
     transformer_size: 32 # Минимальный размер слоя трансформера
     number_of_transformer_layers: 1 # Один слой трансформера
     use_masked_language_model: false # Отключено для ускорения
@@ -26,7 +26,7 @@ pipeline:
 
   - name: EntitySynonymMapper # Маппер синонимов сущностей
   - name: ResponseSelector # Минимальный выбор ответа
-    epochs: 80 # Минимальное количество эпох обучения
+    epochs: 100 # Минимальное количество эпох обучения
 
 policies:
   - name: MemoizationPolicy
